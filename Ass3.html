@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form>
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email ID:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="100"><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Contact Information -->
+    <fieldset>
+        <legend>Contact Details</legend>
+
+        <label for="phone">Mobile Number:</label><br>
+        <input type="number" id="phone" name="phone"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+
+        <label for="city">City:</label><br>
+        <input list="cities" id="city" name="city"><br>
+        <datalist id="cities">
+            <option value="Pune">
+            <option value="Mumbai">
+            <option value="Nagpur">
+            <option value="Nashik">
+        </datalist><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Academic Information -->
+    <fieldset>
+        <legend>Academic Details</legend>
+
+        <label for="course">Course:</label><br>
+        <select id="course" name="course">
+            <optgroup label="Engineering">
+                <option value="CSE">Computer Engineering</option>
+                <option value="IT">Information Technology</option>
+            </optgroup>
+            <optgroup label="Science">
+                <option value="BSc">B.Sc</option>
+                <option value="MSc">M.Sc</option>
+            </optgroup>
+        </select><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skill" value="HTML"> HTML<br>
+        <input type="checkbox" name="skill" value="CSS"> CSS<br>
+        <input type="checkbox" name="skill" value="JavaScript"> JavaScript<br><br>
+
+        <label for="time">Preferred Study Time:</label><br>
+        <input type="time" id="time" name="time"><br><br>
+
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Output Section -->
+    <fieldset>
+        <legend>Form Output</legend>
+        <label>Status:</label><br>
+        <output>Ready to Submit</output><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <br><br>
+
+    <button type="button">Preview</button>
+
+</form>
+
+</body>
+</html>
