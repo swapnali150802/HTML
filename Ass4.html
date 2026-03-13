@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Example</title>
+    <!-- 2. INTERNAL CSS: Applied within the <style> tags in the <head> section. -->
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            color: navy;
+            border-bottom: 2px solid navy;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: navy;
+            color: white;
+        }
+    </style>
+    <!-- 3. EXTERNAL CSS: Link to an external stylesheet named 'styles.css'. -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 1. INLINE CSS: Applied directly to an individual element using the style attribute. -->
+    <h1 style="color: maroon; border-bottom-color: maroon;">Heading with Inline CSS</h1>
+    <p>This is a paragraph styled by internal CSS.</p>
+    <h2>Table Styled by Internal and External CSS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data A</td>
+                <td>Data B</td>
+            </tr>
+            <tr class="external-style">
+                <td>Data C</td>
+                <td>Data D</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
